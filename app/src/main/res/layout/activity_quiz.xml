@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/textView_score_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textView_Qus_count_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question: 1/x"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        android:layout_below="@id/textView_score_id"
+
+        />
+
+    <TextView
+        android:id="@+id/textView_countDown_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:30"
+        android:textColor="@color/Black"
+        android:textSize="40sp"
+        android:layout_alignParentRight="true"
+
+        />
+    <TextView
+        android:id="@+id/textView_question_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="what is the name of capital of bangladeash ?"
+        android:textSize="20sp"
+        android:textColor="@color/Black"
+        android:layout_above="@id/radio_group_id"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group_id"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_button1_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 1"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_button2_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 2"
+            />
+        <RadioButton
+            android:id="@+id/radio_button3_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 3"
+            />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_confirm_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="confirm"
+        android:layout_below="@id/radio_group_id"
+        android:background="@color/colorPrimary"
+
+        />
+
+</RelativeLayout>
